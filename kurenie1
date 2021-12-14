@@ -1,0 +1,46 @@
+climate:
+  - platform: generic_thermostat
+    name: Kúrenie Zóna 1 #obyvacka
+    heater: switch.relay_switch_quinto
+    target_sensor: sensor.frient_a_s_moszb_140_5ee3011a_temperature
+    min_temp: 15
+    max_temp: 25
+    ac_mode: false
+    target_temp: 23
+    hot_tolerance: 0.5
+    cold_tolerance: 0.1
+    min_cycle_duration:
+      minutes: 5
+    keep_alive:
+      minutes: 30
+    initial_operation_mode: 'auto'
+  - platform: generic_thermostat
+    name: Kúrenie Zóna 2 #spalna
+    heater: switch.relay_switch_quinto_2
+    target_sensor: sensor.a4c13814a057_temperature
+    min_temp: 15
+    max_temp: 25
+    ac_mode: false
+    target_temp: 23
+    hot_tolerance: 0.5
+    cold_tolerance: 0.1
+    min_cycle_duration:
+      minutes: 5
+    keep_alive:
+      minutes: 30
+    initial_operation_mode: 'auto'
+  - platform: generic_thermostat
+    name: Kúrenie Zóna 3 #kupelna_wc
+    heater: switch.relay_switch_quinto_3
+    target_sensor: sensor.a4c1387dc27b_temperature
+    min_temp: 15
+    max_temp: 25
+    ac_mode: false
+    target_temp: 23
+    hot_tolerance: 0.5
+    cold_tolerance: 0.1
+    min_cycle_duration:
+      minutes: 5
+    keep_alive:
+      minutes: 30
+    initial_operation_mode: 'auto'
